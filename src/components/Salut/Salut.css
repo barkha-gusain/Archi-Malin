@@ -51,3 +51,46 @@
 .salut-bottom h2{
   font-size: 1.3vw;
 }
+
+
+@media (max-width: 768px) {
+  .salut {
+    height: auto; 
+    padding: 5vw 3vw;
+    gap: 5vw;
+  }
+
+  .salut-top p {
+    font-size: 6vw;
+    padding: 3vw 0;
+    text-align: left; /* ya center karna ho to center */
+  }
+
+  .salut-top span {
+    font-size: 4vw;
+    padding-right: 2vw;
+    margin-top: 2vw;
+  }
+
+  .salut-center {
+    flex-direction: column; 
+    align-self: center;
+    gap: 5vw;
+  }
+
+  .salut-center img {
+    width: 80vw;
+    height: auto;
+  }
+
+  .salut-bottom {
+    font-size: 4vw;
+    padding-left: 0;
+    align-self: center;
+    text-align: center;
+  }
+
+  .salut-bottom h2 {
+    font-size: 4.5vw;
+  }
+}

@@ -23,14 +23,15 @@
 
 @media (max-width: 768px) {
   .pic {
-    /* height: auto; */
+    height: auto;
     padding: 10vw 2vw;
   }
   .image-row {
+    flex-wrap: wrap;
     gap: 2vw;
   }
   .image-row img {
-    height: 35vh;
+    height: 40vw;
     width: 25vw;
   }
 }
@@ -44,7 +45,5 @@
    flex-wrap: wrap;
     gap: 4vw;
   }
-  .image-row img {
-    width: 25vw;
-  }
+  
 }

@@ -22,3 +22,35 @@
   font-size: 3.5vw;
   line-height: 1.3;
 }
+
+@media (max-width: 768px) {
+  .forme {
+    height: auto;      
+    padding: 6vw 4vw;  
+  }
+
+  .forme-text span {
+    font-size: 4vw;    
+    padding-right: 5vw;
+    margin-bottom: 3vw;
+    align-self: flex-start; /* left align */
+  }
+
+  .forme-text p {
+    font-size: 6vw;     /* readable paragraph size */
+    line-height: 1.5;
+    text-align: left;   /* left align for mobile readability */
+  }
+}
+
+/* 📱 Extra small devices */
+@media (max-width: 480px) {
+  .forme-text span {
+    font-size: 8vw;
+    padding-right: 3vw;
+  }
+
+  .forme-text p {
+    font-size: 5vw;
+  }
+}

@@ -133,7 +133,7 @@ color: #fffbf3;
   }
 
   .overlay {
-    height: 50%; /* thoda kam height overlay ka */
+    height: 50vw; /* thoda kam height overlay ka */
   }
 
   .hero-content {

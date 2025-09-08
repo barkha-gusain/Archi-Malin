@@ -16,6 +16,7 @@
 .mm-top {
   height: 50%;
   width: 100%;
+  /* background-color: blue; */
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
@@ -38,6 +39,7 @@
 }
 
 .mm-bottom {
+  /* background-color: blueviolet; */
   height: 50%;
   width: 100%;
   display: flex;
@@ -53,61 +55,36 @@
 }
 
 @media (max-width: 768px) {
-  
- .mm-main {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  position: relative;
+  .mm-top {
+    padding-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mm-top h2 {
+    font-size: 4vw;
+    width: auto;
+    margin-bottom: 2vw;
+  }
+
+  .mm-top p {
+    font-size: 3.5vw;
+    width: 80%;
+    height: auto;
+  }
+
+  .mm-bottom {
+    /* background-color: blueviolet; */
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mm-bottom h2 {
+    font-size: 12vw;
+  }
 }
-
-.scroll-container {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-}
-
-.mm-top {
-  height: 50%;
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-  padding-top: 3vw;
-  padding-right: 2vw;
-}
-
-.mm-top h2 {
-  font-size: 1.6vw;
-  width: 10vw;
-  font-weight: 600;
-  line-height: 1;
-}
-
-.mm-top p {
-  font-size: 1.1vw;
-  display: inline-block;
-  height: 10vw;
-  width: 20vw;
-}
-
-.mm-bottom {
-  height: 50%;
-  width: 100%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-
-.mm-bottom h2 {
-  font-size: 12vw;
-  font-family: "Didot", "Bodoni", serif;
-  font-style: italic;
-  font-weight: 100;
-}
-
-}
-
-
