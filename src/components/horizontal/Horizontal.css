@@ -1,0 +1,37 @@
+
+.horizontal{
+    height: 100vh;
+    width: 120%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  
+}
+
+.horizontal-image-row {
+  display: inline-block;
+  display: flex;
+  justify-content:center; 
+  align-items: center;
+  gap: 3vw; 
+}
+.horizontal-image-row img {
+  align-self: self-start;
+  height: 13vw;
+  width: 12vw;
+  filter: grayscale(100%);
+  cursor: pointer; 
+
+}
+
+.horizontal-image-row img:hover {
+  filter: grayscale(0%);
+/* transition: all 0.4s ease-in-out; */
+  transform: scale(1.2);
+}
+.image h2{
+   font-family: "Didot", "Bodoni", serif;
+  /* font-style: italic; */
+  font-weight: 100;
+  font-size: 1vw;
+}

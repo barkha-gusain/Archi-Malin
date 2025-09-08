@@ -1,0 +1,105 @@
+.nav {
+  position: fixed;
+  /* top pe hamesha visible rahe */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 7vw;
+  background: rgba(34, 34, 34, 0);
+  /* transparent thoda dark */
+  color: #fffbf3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4vw;
+  z-index: 1000;
+}
+
+.logo h1 {
+  font-size: 2.5vw;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+.nav h1 span {
+  display: inline-block;
+}
+
+.nav .malin {
+  font-family: "Didot", "Bodoni", serif;
+  font-style: italic;
+  font-weight: 100;
+}
+
+
+
+
+.bg-content {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* pura screen section */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+  align-items: flex-end;
+  align-self: self-end;
+}
+
+.bg-content img {
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  /* z-index: 1; */
+}
+
+
+@media (max-width: 1024px) {
+  .logo h1 {
+    font-size: clamp(18px, 3vw, 28px);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    height: 60px;
+    padding: 0 20px;
+  }
+
+  .logo h1 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 440px) {
+  .nav {
+    height: 50px;
+    padding: 0 12px;
+  }
+
+  .logo h1 {
+    font-size: 18px;
+  }
+  .bg-content {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  align-self: self-end;
+}
+
+.bg-content img {
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  /* z-index: 1; */
+}
+}

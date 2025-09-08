@@ -1,0 +1,24 @@
+.forme {
+  height: 50vh;
+  width: 100%;
+  background-color: #f8f4ed;
+  padding: 2vw 2vw;
+
+}
+
+.forme-text span {
+  font-size: 2vw;
+  font-weight: bold;
+  color: black;
+  padding-right: 8vw;
+  align-self: center;
+}
+
+.forme-text p {
+  color: rgb(41, 39, 39);
+  font-family: "Didot", "Bodoni", serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 3.5vw;
+  line-height: 1.3;
+}

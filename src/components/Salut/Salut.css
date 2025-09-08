@@ -1,0 +1,53 @@
+.salut {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 170vh;
+  width: 100%;
+  gap: 2vw;
+  background-color: #f8f4ed;
+}
+
+.salut-top p {
+  padding: 2vw 2vw;
+  font-size: 2.8vw;
+  font-family: "Didot", "Bodoni", serif;
+  font-style: italic;
+  line-height: 1.3;
+  font-weight: lighter;
+  color: rgb(41, 39, 39);
+}
+
+.salut-top span {
+  font-size: 2vw;
+  font-weight: bold;
+  color: black;
+  padding-right: 8vw;
+  align-self: center;
+}
+
+.salut-center {
+  display: flex;
+  align-self: flex-end;
+  gap: 2vw;
+}
+
+.salut-center img {
+  height: 30vw;
+  width: 25vw;
+}
+
+.salut-center img:hover {
+  transform: scale(1.05);
+}
+
+.salut-bottom {
+  display: flex;
+  align-self: flex-start;
+  font-size: 1.2vw;
+  padding-left: 3vw;
+}
+.salut-bottom h2{
+  font-size: 1.3vw;
+}
