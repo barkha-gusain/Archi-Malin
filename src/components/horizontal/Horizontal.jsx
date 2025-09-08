@@ -1,5 +1,5 @@
 import React from 'react'
-import './HoriZontal.css'
+import './Horizontal.css'
 const Horizontal = () => {
   return (
     <>
