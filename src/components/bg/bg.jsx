@@ -27,7 +27,7 @@ const Bg = () => {
         width: "100%",
         // scale: 1,
         scrollTrigger: {
-          start: "top -80%",
+          start: "top -85%",
           end: "top -100%",
           scrub: 1,
         },

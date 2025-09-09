@@ -13,14 +13,24 @@
   justify-content: space-between;
   align-items: center;
   gap: 3vw;
+   overflow: visible;
 }
 
 .image-row img {
   align-self: self-start;
   height: 20vw;
   width: 15vw;
+  pointer-events: auto;
+   filter: grayscale(100%);
+  cursor: pointer;
+   transition: all 0.4s ease-in-out;
 }
-
+.image-row img:hover{
+   border: 5px solid red;
+  filter: grayscale(0%);
+  /* transition: all 0.4s ease-in-out; */
+  transform: scale(1.2);
+}
 @media (max-width: 768px) {
   .pic {
     height: auto;
