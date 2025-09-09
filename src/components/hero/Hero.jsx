@@ -15,7 +15,7 @@ export default function Hero() {
       scrollTrigger: {
         trigger: el,
         start: "top 30%",
-        end: "+=530",
+        end: "+=680",
         scrub: 2,
         pin: true,
       },
