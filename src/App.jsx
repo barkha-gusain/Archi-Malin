@@ -1,30 +1,49 @@
 "use client"
 
-import { useRef, useEffect } from "react"
+import { useEffect, useRef } from "react"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-// import Lenis from "lenis"
-
-import SmoothScrollProvider from "./SmoothScrollProvider"
-
-import Hero from "./components/hero/Hero"
+// import Hero from "./components/hero/Hero"
 import Bg from "./components/bg/bg"
 import Content from "./components/second/Content"
 import Services from "./components/services/Services"
 import BottomService from "./components/services/BottomService"
 import Image from "./components/img/Image"
+import ImageScroll from "./components/imageScroll/ImageScroll"
 import MM from "./components/com/MM"
 import Horizontal from "./components/horizontal/Horizontal"
 import Salut from "./components/Salut/Salut"
 import Forme from "./components/forme/Forme"
 import Footer from "./components/footer/Footer"
+import Hero from "./components/hero/Hero"
+import Lenis from "lenis"
 
-gsap.registerPlugin(ScrollTrigger)
+  gsap.registerPlugin(ScrollTrigger)
+
 
 export default function App() {
   const containerRef = useRef(null)
+  const purpleRef = useRef(null)
 
   useEffect(() => {
+    const lenis = new Lenis({
+      duration: 2,
+      smoothWheel: true,
+      wheelMultiplier: 0.3,
+      smoothTouch: true,
+    })
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+    requestAnimationFrame(raf)
+
+    lenis.on("scroll", () => {
+      ScrollTrigger.update()
+    })
+
+  
+
     gsap.defaults({ ease: "none", duration: 5 })
 
     const ctx = gsap.context(() => {
@@ -32,7 +51,7 @@ export default function App() {
 
       tl.from(".orange", { yPercent: 100, delay: 5 })
         .from(".purple", { xPercent: 100, ease: "power2.out" })
-        .from(".green", { yPercent: 100 })
+        .from(".green", { yPercent: 100, })
         .to(".purple", { xPercent: -100, ease: "power2.inOut" }, "<1")
         .to(".green", { yPercent: -100 })
         .from(".red", { xPercent: 100 }, ">")
@@ -41,9 +60,9 @@ export default function App() {
         .to(".red-content", { xPercent: -100 }, ">")
         .to(".yellow", { xPercent: -100 }, "<")
         .from(".gray", { yPercent: 100 }, ">")
-        .from(".brown", { xPercent: 120 }, ">")
+        .from(".brown", { xPercent: 120, }, ">")
         .to({}, { duration: 1 })
-        .to(".brown", { xPercent: -35 }, "<")
+        .to(".brown", { xPercent: -35, }, "<")
 
       ScrollTrigger.create({
         animation: tl,
@@ -54,6 +73,9 @@ export default function App() {
         pin: true,
         anticipatePin: 1,
       })
+
+
+
     }, containerRef)
 
     return () => ctx.revert()
@@ -61,39 +83,36 @@ export default function App() {
 
   return (
     <>
-      {/* ✅ Smooth Scroll सिर्फ इन sections पर */}
-      <SmoothScrollProvider>
-        <div className="app-container">
-          <div id="container" ref={containerRef} className="scroll-container">
-            <Hero />
-            <div className="orange">
-              <Bg />
-            </div>
-            <div className="purple">
-              <Content />
-            </div>
-            <div className="green">
-              <Services />
-            </div>
-            <div className="red">
-              <div className="red-content">
-                <BottomService />
-              </div>
-            </div>
-            <div className="yellow">
-              <Image />
-            </div>
-            <div className="gray">
-              <MM />
-            </div>
-            <div className="brown">
-              <Horizontal />
+      <div className="app-container">
+        <div id="container" ref={containerRef} className="scroll-container">
+          <Hero />
+          <div className="orange">
+            <Bg />
+          </div>
+
+          <div className="purple" ref={purpleRef}>
+            <Content />
+          </div>
+          <div className="green">
+            <Services />
+          </div>
+          <div className="red">
+            <div className="red-content">
+              <BottomService />
             </div>
           </div>
+          <div className="yellow">
+            <Image />
+          </div>
+          <div className="gray">
+            <MM />
+          </div>
+          <div className="brown">
+            <Horizontal />
+          </div>
         </div>
-      </SmoothScrollProvider>
-
-      {/* ✅ ये components normal scroll करेंगे */}
+      </div>
+      {/* <ImageScroll /> */}
       <Salut />
       <Forme />
       <Footer />
