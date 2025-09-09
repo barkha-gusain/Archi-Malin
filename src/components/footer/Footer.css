@@ -229,13 +229,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3vw 0;
+  /* padding: 3vw 0; */
 }
 
 .footer-logo img {
   width: 100%;
   height: auto;
-  max-width: 200px;
+  max-width: 90vw;
 }
 
 

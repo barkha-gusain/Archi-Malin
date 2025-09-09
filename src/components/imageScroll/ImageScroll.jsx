@@ -43,13 +43,13 @@ const ImageScroll = () => {
         <div className="right">
           <div className='photos'>
             <div className="photo">
-              <img src="/public/hero.jpg" alt="" />
+              <img src="/hero.jpg" alt="" />
             </div>
             <div className="photo">
-              <img src="/public/pic5.webp" alt="" />
+              <img src="/pic5.webp" alt="" />
             </div>
             <div className="photo">
-              <img src="/public/forest.jpg" alt="" />
+              <img src="/forest.jpg" alt="" />
             </div>
           </div>
         </div>
