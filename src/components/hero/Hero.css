@@ -135,46 +135,49 @@ color: #fffbf3;
   .hero-content {
     padding: 1vw;
     justify-content: flex-start;
+    flex-direction: column;
   }
 
   .contact {
     font-size: 0.9vw;
-    margin: 1vw;
+    /* margin: 6vw; */
   }
 
   .contact h2 {
-    font-size: 1vw;
+    font-size: 3vw;
   }
 
   .social-links {
     flex-direction: row; 
     justify-content: flex-start;
-    gap: 3vw;
+    gap: 2vw;
     margin-top: 1vw;
   }
 
   .social-links a {
-    font-size: 1vw;
+    font-size: 2vw;
   }
 
   .middle {
-    padding: 0 1vw;
+    /* padding: 0 1vw; */
     font-size: 1.5vw;
   }
 
   .para {
-   
+    flex-direction: column;
+   justify-content: center;
     align-items: flex-start;
-    font-size: 0.9vw;
-    padding-bottom: 2vw;
+    margin-top: 2vw;
     gap: 0.5vw;
   }
-
+.para p{
+  font-size: 1.8vw;
+}
   .subtitle {
-    font-size: 1vw;
+    font-size: 1.8vw;
   }
 
   .antoine {
-    font-size: 1vw;
+    font-size: 2vw;
   }
 }
