@@ -25,6 +25,7 @@
 }
 
 .mm-top h2 {
+  
   font-size: 1.6vw;
   width: 10vw;
   font-weight: 600;
@@ -55,12 +56,17 @@
 }
 
 @media (max-width: 768px) {
+  .mm-main{
+    justify-content: space-around;
+    /* background-color: brown; */
+  }
   .mm-top {
     padding-top: 5vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    /* background-color: blueviolet; */
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 
   .mm-top h2 {
@@ -80,8 +86,6 @@
     height: 50%;
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .mm-bottom h2 {

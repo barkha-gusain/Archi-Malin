@@ -60,9 +60,9 @@ export default function App() {
         .to(".red-content", { xPercent: -100 }, ">")
         .to(".yellow", { xPercent: -100 }, "<")
         .from(".gray", { yPercent: 100 }, ">")
-        .from(".brown", { xPercent: 120, }, ">")
+        .from(".brown", { xPercent: 190, }, ">")
         .to({}, { duration: 1 })
-        .to(".brown", { xPercent: -35, }, "<")
+        .to(".brown", { xPercent: 0, }, "<")
 
       ScrollTrigger.create({
         animation: tl,
