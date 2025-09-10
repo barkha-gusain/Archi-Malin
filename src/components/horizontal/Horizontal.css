@@ -43,7 +43,7 @@
   .horizontal-image-row {
     /* margin-top: 10vw; */
     padding: 0 1vw;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
     gap: 5vw;
     flex-wrap: wrap;
     padding-right: 4vw;

@@ -62,7 +62,7 @@ export default function App() {
         .from(".gray", { yPercent: 100 }, ">")
         .from(".brown", { xPercent: 190, }, ">")
         .to({}, { duration: 1 })
-        .to(".brown", { xPercent: 0, }, "<")
+        // .to(".brown", { xPercent: -190, }, "<")
 
       ScrollTrigger.create({
         animation: tl,
